@@ -1,0 +1,44 @@
+body {
+  background: linear-gradient(to left top, #000359, #04098b);
+  background-size: cover;
+  overflow: hidden;
+}
+
+.container {
+  margin: 11%;
+  text-align: center;
+}
+
+.container > h2 {
+  font-size: 3rem;
+  color: #fff;
+  font-family: jost;
+  margin-top: 0;
+}
+.container > h3 {
+  margin: 0;
+  font-size: 2.7rem;
+  color: #ddd;
+  font-family: jost;
+}
+.general {
+  display: flex;
+  justify-content: center;
+}
+
+.general > .box {
+  margin: 20px;
+  font-size: 1.9rem;
+  color: #fff;
+  font-family: monospace;
+}
+.box > h4 {
+  padding: 0.7rem;
+  color: #000000;
+  background-color: #d2b100;
+}
+
+body > div > div > div > h4 {
+  font-family: system-ui;
+  font-size: 1.3rem;
+}

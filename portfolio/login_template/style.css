@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  height: 95vh;
+  background: linear-gradient(to top left, #22272e, #39424e);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: #00000075;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  flex-direction: column;
+}
+
+h2 {
+  color: #eee;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.text-box {
+  width: 90%;
+  margin: 5%;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.container input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #fff;
+  font-size: 20px;
+  padding-left: 10px;
+  color: #fff;
+}
+.container label {
+  pointer-events: none;
+  position: absolute;
+  left: 5%;
+  top: 5px;
+  color: rgb(255, 255, 255);
+  transition: 0.3s;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+  top: -60%;
+  font-size: 14px;
+  color: rgb(49, 62, 255);
+}
+
+#usr,
+#psw {
+  color: red;
+  position: absolute;
+  left: 5%;
+  top: 75%;
+  font-size: 12px;
+}
+#psw {
+  top: 110%;
+}
+.container input.err {
+  border-bottom: 1px solid rgb(255, 0, 0);
+}
+.container input.ok {
+  border-bottom: 1px solid rgb(0, 255, 0);
+}
+
+button {
+  width: 100%;
+  border: none;
+  background: rgb(49, 62, 255);
+  padding: 1rem 10px;
+  outline: none;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.container a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #fff;
+  padding-top: 1rem;
+}
