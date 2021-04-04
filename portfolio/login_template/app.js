@@ -15,6 +15,8 @@ function userFunc() {
       user.classList.add("err");
       throw "qiymat bo'sh";
     } else if (user.value.length < 3) {
+      user.classList.remove("ok");
+      user.classList.add("err");
       throw "minimum 3ta belgi kiriting";
     } else {
       user.classList.remove("err");
