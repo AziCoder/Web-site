@@ -293,11 +293,11 @@ nav {
 
 /* PORTFOLIO SECTION */
 #portfolio {
-  padding: 7rem 0;
+  scroll-padding: 7rem 0;
   background: #fdfdfd;
   min-height: 70vh;
   position: relative;
-  margin: -1px 0px;
+  margin: -3px 0px;
 }
 #portfolio .card {
   border: none;
